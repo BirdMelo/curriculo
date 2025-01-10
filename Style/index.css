@@ -1,0 +1,40 @@
+@import url('./header.css');
+@import url('./mainSections/resume.css');
+@import url('./mainSections/training.css');
+@import url('./mainSections/project.css');
+:root {
+    --body_bg: #181818;
+    --standard_text_color: #FFFFFF;
+    --hightlight_color: #22D4FD;
+    --bg_container:#1F1F1F;
+
+    --standard_font: Arial, Helvetica, sans-serif
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-top: 8%;
+    background-color: var(--body_bg);
+    font-family: var(--standard_font);
+    color: var(--standard_text_color);
+    gap: 30px;
+}
+
+.hidden{
+    display: none;
+}
+.showContent#resume_section {
+    display: grid;
+}
+.showContent#training_section {
+    display: flex;
+}

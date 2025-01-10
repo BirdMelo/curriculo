@@ -1,0 +1,51 @@
+#project_section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;
+}
+#projects__front_end::before {
+    content: 'Front-End';
+    position: absolute;
+    top: -32px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#project_section ul li {
+    display: grid;
+    grid-template-areas: 
+    "img img"
+    "github vercel"
+    ;
+    row-gap: 16px;
+    background-color: var(--bg_container);
+    padding: 20px;
+    border-radius: 4%;
+}
+#project_section ul li img {
+    grid-area: img;
+    width: 500px;
+}
+#project_section ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--standard_text_color);
+    text-decoration: none;
+    margin: auto;
+    gap: 4px;
+
+    padding: 8px 16px;
+    border: solid 1px var(--hightlight_color);
+    cursor: pointer;
+}
+#project_section ul li a img {
+    width: 20px;
+}
+@media screen and (max-width: 560px) {
+    #project_section ul li img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,65 @@
+/*RESUME*/
+#resume_section {
+    grid-template-areas: 
+    "name none"
+    "img data"
+    "links data";
+    gap: 16px;
+}
+#resume_section h1 {
+    grid-area: name;
+    text-align: center;
+}
+#profile_pic {
+    grid-area: img;
+    width: 350px;
+}
+#social_network {
+    grid-area: links;
+    display: flex;
+    justify-content: space-around;
+}
+#social_network a {
+    text-decoration: none;
+    color: var(--standard_text_color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#social_network a img {
+    width: 30px;
+}
+#topics_list {
+    grid-area: data;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.topics {
+    background-color: var(--bg_container);
+    padding: 15px 10px;
+    border-radius: 16px;
+}
+.topic_title {
+    margin-bottom: 12px;
+}
+.items {
+    list-style-type: none;
+}
+@media screen and (max-width: 767px){
+    #resume_section {
+        grid-template-areas: 
+        "img name"
+        "img links"
+        "data data";
+        column-gap: 0px;
+    }
+    #profile_pic {
+        width: 150px;
+    }
+    #resume_section h1 {
+        font-size: 1rem;
+    }
+}

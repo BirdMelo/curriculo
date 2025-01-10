@@ -1,0 +1,28 @@
+header{
+    display: flex;
+    gap: 25px;
+}
+
+header button {
+    border: solid var(--hightlight_color) 2px;
+    background-color: transparent;
+    color: var(--standard_text_color);
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.selectedButton{
+    background-color: var(--hightlight_color);
+    border: solid var(--body_bg) 2px;
+    outline: solid var(--hightlight_color) 2px;
+    color: var(--body_bg);
+    font-weight: 700;
+}
+@media screen and (max-width: 412px) {
+    header {
+        gap: 12px;
+    }
+    header button {
+        font-size: 0.6rem;
+    }
+}
