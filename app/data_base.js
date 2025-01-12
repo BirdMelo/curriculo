@@ -5,6 +5,7 @@ certificates: [
     //FRONT END
     {name:'Introdução de HTML', column:'front', icon: 'html', link: 'https://cursos.alura.com.br/degree/certificate/06131f0f-deae-490a-abbd-ae293e171bd2?lang=pt_BR'},
     {name:'CSS: Flexbox e Grid', column:'front', icon: 'html', link: 'https://cursos.alura.com.br/certificate/d4a5de55-f959-44dd-8efb-99d3c4274090?lang=pt_BR'},
+    {name:'Desenvolvimento de aplicações', column:'front', icon:'html', link: 'https://cursos.alura.com.br/degree/certificate/fcb031fb-555b-4dae-96e8-a2d22bda5738?lang=pt_BR'},
     //DATA BANK
     {name:'Introdução de SQL', column:'database', icon: 'sql', link: 'https://cursos.alura.com.br/degree/certificate/34fa95b2-89a2-48af-a7d1-c036504cf7e0?lang=pt_BR'}
 ],
