@@ -38,12 +38,15 @@
     gap: 15px;
 }
 .topics {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
     background-color: var(--bg_container);
     padding: 15px 10px;
     border-radius: 16px;
 }
 .topic_title {
-    margin-bottom: 12px;
+    margin-bottom: 6px;
 }
 .items {
     list-style-type: none;
@@ -54,7 +57,6 @@
         "img name"
         "img links"
         "data data";
-        column-gap: 0px;
     }
     #profile_pic {
         width: 150px;
