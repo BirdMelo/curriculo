@@ -26,10 +26,3 @@ header button {
         font-size: 0.6rem;
     }
 }
-@media screen and (min-width:768px) {
-    
-    header button {
-        font-size: 1.5rem;
-    }
-
-}
