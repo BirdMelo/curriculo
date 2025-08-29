@@ -1,4 +1,5 @@
 import data_base from './data_base.js'
+import { createCssIcon, createHtmlIcon, createJavaIcon, createSqlIcon, createReactNativeIcon } from './toolsIcon.js'
 
 const renderize = {
     trainingPage(){
@@ -11,8 +12,6 @@ const renderize = {
         /*UL OF SECTION*/
         const training_onWeb = document.createElement('ul')
         training_onWeb.id = 'training_onWeb'
-        // const training_downloadable = document.createElement('ul')
-        // training_downloadable.id = 'training_downloadable'
     
         const ulTitle = document.createElement('h3')
         ulTitle.textContent = 'Formações disponíveis por link'
@@ -53,10 +52,25 @@ const renderize = {
                     database.append(a)
             }
     
+            // const icon = document.createElement('div')
+            // icon.classList.add('training_icon')
+            // icon.classList.add(certificate.icon)
+            // a.append(icon)
+            const iconMap = {
+                html: createHtmlIcon,
+                css: createCssIcon,
+                java: createJavaIcon,
+                sql: createSqlIcon,
+                reactNative: createReactNativeIcon
+            };
             const icon = document.createElement('div')
             icon.classList.add('training_icon')
-            icon.classList.add(certificate.icon)
-            a.append(icon)
+            const thisIcon = certificate.icon;
+            if (iconMap[thisIcon]) {
+                icon.innerHTML = iconMap[thisIcon]();
+                a.append(icon);
+            }
+
         })
     
         training_onWeb.append(ulTitle, back_end, add_hr(), front_end, add_hr(), database)

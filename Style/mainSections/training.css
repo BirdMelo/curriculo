@@ -49,13 +49,13 @@ hr {
 }
 
 .training_icon{
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    height: 100%;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
-.java{
+/* .java{
     position: relative;
 }
 .java::after{
@@ -91,7 +91,7 @@ hr {
     background-repeat: no-repeat;
     position: absolute;
     background-size: contain;
-}
+} */
 @media screen and (max-width: 769px){
     #training_section ul h3 {
         grid-area: 1/1/2/2;
